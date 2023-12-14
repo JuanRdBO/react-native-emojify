@@ -1,18 +1,23 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-emojify';
+import { TouchableFloatingEmojis } from 'react-native-emojify';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <TouchableFloatingEmojis
+        gravityEnabled
+        emojis={['thumbs_up', 'hot_beverage', 'money_with_wings']}
+        images={[
+          require('../assets/icon.png'),
+          require('../assets/solana-logo.png'),
+          require('../assets/stellar-logo.png'),
+          require('../assets/moneygram-logo.webp'),
+        ]}
+      >
+        <Text style={styles.text}>🦄 Press me</Text>
+      </TouchableFloatingEmojis>
     </View>
   );
 }
@@ -23,9 +28,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+  text: {
+    padding: 10,
+    borderRadius: 10,
+    borderWidth: StyleSheet.hairlineWidth,
+    backgroundColor: '#f3b4d7',
+    overflow: 'hidden',
   },
 });
