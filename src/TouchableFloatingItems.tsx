@@ -14,6 +14,20 @@ type CopyFloatingEmojisProps = {
   onPress?: () => void;
 } & Partial<React.ComponentProps<typeof FloatingEmojis>>;
 
+/**
+ * `TouchableFloatingEmojis` is a functional component that renders the `FloatingEmojis` component
+ * and a `TouchableOpacity` component as its child. When the `TouchableOpacity` is pressed, it triggers
+ * the `onNewEmoji` function from `FloatingEmojis` and the `onPress` prop (if provided).
+ *
+ * @component
+ * @param {object} props - The properties object.
+ * @param {ReactNode} props.children - The child components to be rendered within the `TouchableOpacity`.
+ * @param {boolean} [props.disabled=false] - If true, the `onPress` function will not be triggered.
+ * @param {Array<string> | string} [props.emojis] - The emojis to be used in the `FloatingEmojis` component.
+ * @param {Array<ImageSource> | ImageSource} [props.images] - The images to be used in the `FloatingEmojis` component.
+ * @param {function} [props.onPress] - The function to be triggered when the `TouchableOpacity` is pressed.
+ * @returns {ReactElement} The rendered `TouchableFloatingEmojis` component.
+ */
 const TouchableFloatingEmojis: FC<CopyFloatingEmojisProps> = ({
   children,
   disabled,

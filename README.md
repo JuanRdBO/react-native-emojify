@@ -8,14 +8,31 @@ Send Emojis flying!
 npm install react-native-emojify
 ```
 
+## What
+
+This library allows you to send emojis flying across the screen. It's a fun way to add some flair to your app. This library is a rewrite of [Rainbow Wallet's](rainbow.me) [FloatingEmojis](https://github.com/rainbow-me/rainbow) component, which is written in JS.
+
+This library is written in TS and supports images as well as emojis.
+
 ## Usage
 
-```js
-import { multiply } from 'react-native-emojify';
+```ts
+import { TouchableFloatingEmojis } from 'react-native-emojify';
 
 // ...
 
-const result = await multiply(3, 7);
+<TouchableFloatingEmojis
+  gravityEnabled
+  emojis={['thumbs_up', 'hot_beverage', 'money_with_wings']}
+  images={[
+    require('../assets/icon.png'),
+    require('../assets/solana-logo.png'),
+    require('../assets/stellar-logo.png'),
+    require('../assets/moneygram-logo.webp'),
+  ]}
+>
+  <Text style={styles.text}>🦄 Press me</Text>
+</TouchableFloatingEmojis>;
 ```
 
 ## Contributing
