@@ -6,7 +6,12 @@ Send Emojis flying!
 
 ```sh
 npm install react-native-emojify
+
+
+
 ```
+
+[Demo](https://github.com/JuanRdBO/react-native-emojify/assets/28183468/849f2cb8-2b28-4607-b7ce-28b598d11e5b)
 
 ## What
 
