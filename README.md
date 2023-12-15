@@ -8,7 +8,7 @@ Send Emojis flying!
 npm install react-native-emojify
 ```
 
-![Demo](https://github.com/JuanRdBO/react-native-emojify/assets/28183468/849f2cb8-2b28-4607-b7ce-28b598d11e5b)
+![Demo](https://github.com/JuanRdBO/react-native-emojify/assets/28183468/0f26463f-c6b4-4b0c-80c7-196c27313358)
 
 ## What
 
