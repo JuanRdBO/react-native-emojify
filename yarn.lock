@@ -14720,13 +14720,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-fast-compare@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "react-fast-compare@npm:3.2.2"
-  checksum: 2071415b4f76a3e6b55c84611c4d24dcb12ffc85811a2840b5a3f1ff2d1a99be1020d9437ee7c6e024c9f4cbb84ceb35e48cf84f28fcb00265ad2dfdd3947704
-  languageName: node
-  linkType: hard
-
 "react-is@npm:^16.12.0 || ^17.0.0 || ^18.0.0, react-is@npm:^18.0.0":
   version: 18.2.0
   resolution: "react-is@npm:18.2.0"
@@ -14816,12 +14809,10 @@ __metadata:
     jest: ^28.1.1
     lodash: ^4.17.21
     prettier: ^2.0.5
-    prop-types: ^15.8.1
     react: 18.2.0
-    react-fast-compare: ^3.2.2
     react-native: 0.72.6
     react-native-builder-bob: ^0.23.2
-    react-native-reanimated: 3.3.0
+    react-native-reanimated: ">=3.0.0"
     release-it: ^15.0.0
     typescript: ^5.0.2
   peerDependencies:

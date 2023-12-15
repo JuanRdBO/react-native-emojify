@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <TouchableFloatingEmojis
-        gravityEnabled
+        // gravityEnabled
         emojis={['thumbs_up', 'hot_beverage', 'money_with_wings']}
         images={[
           require('../assets/icon.png'),
